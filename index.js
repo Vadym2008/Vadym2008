@@ -293,8 +293,64 @@ function lesson2_18_2(){
     console.log(var2)
 }
 
-lesson2_18_2()
+function student(){
+   let arr = [
+    {
+        name: "Ivan",
+        grades: [85, 90, 78]
+    },
+    {
+        name: "Olena",
+        grades: [92, 88, 95]
+    },
+    {
+        name: "Andriy",
+        grades: [75, 80, 79]
+    }
+   ]
+   function allStudents(student){
+    for(let i = 0; i < arr.grades.length; i++){
+         let ttt = arr.grades[i] + grades / arr.grades.length
+    }
+   }
+  console.log(ttt)
+}
+
+function Username(userName){
+    let users = [
+        {
+            name: "Ivan",
+            email: "ivan@example.com"
+        },
+        {
+            name: "Olena",
+            email: "olena@example.com"
+        }
+        
+    ];
+    let student = users.find(user => user.name === userName)
+    jklbn
+    console.log(student.email)
+}
+// Username("Ivan");\
+function superHero(){
+    let characters = [
+        {
+            name: "Артем",
+            class: "воїн",
+            hp: 120
+        },
+        {
+            name: "Богдан",
+            class: "маг",
+            hp: 150,
+        }
+    ]
+    const sort = characters.sort((a, b) => a.hp > b.hp ? -1 : 1);
+    console.log(sort);
+}
+
+superHero();
 
 //вивести матрицю чисел 10 рядків цифри від 1 до 10
-
 //Всі задачі обгорнути у функції і придумати хороші назви для функцій і 1 з них викликати
