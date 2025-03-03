@@ -247,7 +247,7 @@ function numbersss() {
     console.log(num)
 }
 
-function getObjectOfTypes(arr){
+function getObjectOfTypes(arr) {
     let obj = {
         strings: [],
         numbers: [],
@@ -255,29 +255,29 @@ function getObjectOfTypes(arr){
         objects: [],
         others: [],
     };
-    for (let i = 0; i < arr.length; i++){
-        if (typeof arr[i] == "string"){
-            obj.strings.push({key: i, value: arr[i]})
-        } else if (typeof arr[i] == "number"){
-            obj.numbers.push({key: i, value: arr[i]})
-        } else if(typeof arr[i] == "boolean"){
-            obj.booleans.push({key: i, value: arr[i]})
-        } else if (typeof arr[i] == "object"){
-            obj.objects.push({key: i, value: arr[i]})
-        } else{
-            obj.others.push({key: i, value: arr[i]})
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] == "string") {
+            obj.strings.push({ key: i, value: arr[i] })
+        } else if (typeof arr[i] == "number") {
+            obj.numbers.push({ key: i, value: arr[i] })
+        } else if (typeof arr[i] == "boolean") {
+            obj.booleans.push({ key: i, value: arr[i] })
+        } else if (typeof arr[i] == "object") {
+            obj.objects.push({ key: i, value: arr[i] })
+        } else {
+            obj.others.push({ key: i, value: arr[i] })
         }
     }
     return obj;
 }
 
-function showGroupedArraysObject(){
-    let myArray = [1, "Hello", true, 2, "World", false, {name: "Ivan"}, undefined];
+function showGroupedArraysObject() {
+    let myArray = [1, "Hello", true, 2, "World", false, { name: "Ivan" }, undefined];
     let groupedObj = getObjectOfTypes(myArray)
     console.log(groupedObj)
 }
 
-function lesson2_18(){
+function lesson2_18() {
     let obj1 = {
         name: "Petro",
     }
@@ -286,37 +286,49 @@ function lesson2_18(){
     console.log(obj2.name)
 }
 
-function lesson2_18_2(){
+function lesson2_18_2() {
     let var1 = "Petro"
     let var2 = var1
     var1 = "Ivan"
     console.log(var2)
 }
 
-function student(){
-   let arr = [
-    {
-        name: "Ivan",
-        grades: [85, 90, 78]
-    },
-    {
-        name: "Olena",
-        grades: [92, 88, 95]
-    },
-    {
-        name: "Andriy",
-        grades: [75, 80, 79]
-    }
-   ]
-   function allStudents(student){
-    for(let i = 0; i < arr.grades.length; i++){
-         let ttt = arr.grades[i] + grades / arr.grades.length
-    }
-   }
-  console.log(ttt)
+function student() {
+    let arr = [
+        {
+            name: "Ivan",
+            grades: [85, 90, 78]
+        },
+        {
+            name: "Olena",
+            grades: [92, 88, 95]
+        },
+        {
+            name: "Andriy",
+            grades: [75, 80, 79]
+        }
+    ]
+
+    setAvgToAllStudents(arr);
+
+    console.log(arr)
+
 }
 
-function Username(userName){
+student()
+
+function setAvgToAllStudents(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let avg = 0;
+        for (let j = 0; j < arr[i].grades.length; j++) {
+            avg = avg + arr[i].grades[j]
+        }
+        avg = avg / arr[i].grades.length
+        arr[i].average = avg
+    }
+}
+
+function Username(userName) {
     let users = [
         {
             name: "Ivan",
@@ -325,15 +337,40 @@ function Username(userName){
         {
             name: "Olena",
             email: "olena@example.com"
+        },
+        {
+            name: "Ivan",
+            email: "ivan2@example.com"
         }
-        
+
     ];
-    let student = users.find(user => user.name === userName)
-    jklbn
-    console.log(student.email)
+    ///let student = users.find(user => user.name === userName)
+    let email = getEmail(users, userName)
+    if (email == null){
+        console.log("Користувача не знайдено")
+    }else {
+        console.log(email)
+    }
 }
-// Username("Ivan");\
-function superHero(){
+
+
+Username("Ivan")
+
+
+
+
+
+function getEmail(users, searchName){
+    let foundEmail = null
+    for(let i = 0; i < users.length; i++){
+        if (searchName == users[i].name){
+            foundEmail = users[i].email;
+            break;
+        }
+    }
+    return foundEmail;
+}
+function superHero() {
     let characters = [
         {
             name: "Артем",
