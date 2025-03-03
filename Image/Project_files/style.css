@@ -1,0 +1,221 @@
+body{
+  font-family: "Mulish", serif;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 150px;
+}
+
+.nav-list
+{
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+.nav-list-item{
+  margin-right: 50px;
+}
+
+.block-with-img{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.image-tranfalgar{
+  margin-left: 100px;
+}
+
+
+.tranfalgar {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  height: 112px;
+  width: 427px;
+  margin-left: 100px;
+}
+
+.description{
+  list-style: none;
+  color: rgb(129, 129, 129);
+  list-style: none;
+  text-align: left;
+  height: 96px;
+  width: 445px;
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.button-to-consult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #458FF6;
+  color: #FFF;
+  border-radius: 24px;
+  width: 200px;
+  height: 60px;
+  margin-left: 150px;
+  border: none;
+}
+
+.title-services{
+  text-align: center;
+}
+
+.image-services{
+  margin-left: 600px;
+}
+
+.desc-services{
+  text-align: center;
+}
+
+.page-menu-services{
+  display: flex;
+  margin-left: 50px;
+}
+
+.button-for-learn{
+  border: none;
+  margin-left: 100px;
+}
+
+.feature-line{
+  display: flex;
+  margin-left: 50px;
+  justify-content: center;
+}
+
+.feature-block{
+  width: 350px;
+  height: 354px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.feature-block__img-wrap{
+ min-height: 145px;
+}
+
+.feature-block__title{
+  margin-left: 30px;
+}
+
+.feature-block__img{
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.feature-block__text{
+  margin-left: 30px;
+}
+
+.button-services{
+  border-radius: 24px;
+  border-color: #458FF6;
+  margin-left: 600px;
+  width: 200px;
+}
+
+.button-services-text{
+  color: #458FF6;
+}
+
+.download-container{
+  display: flex;
+}
+
+.download-container__img{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.download-container__content{
+  padding: 100px 50px 10px 15px;
+}
+
+.download-container__button{
+  border-radius: 24px;
+  border-color: #458FF6;
+  width: 200px;
+  padding: 15px;
+}
+
+.download-container__block{
+  margin-left: 150px;
+  margin-bottom: 200px;
+}
+
+.person-customer{
+  width: 1120px;
+  height: 425px;
+  background-color: #458FF6;
+  border-radius: 20px;
+  margin-left: 150px;
+}
+
+.basic-text{
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.person-customer__img{
+  margin-left: 550px;
+}
+
+.person-customer__logo{
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.person-customer__inf{
+  display: flex;
+}
+
+.person-customer__name{
+  margin-top: 50px;
+  margin-left: 50px;
+  color: #FFF;
+}
+
+.person-customer__text-person{
+  display: flex;
+  color: #FFF;
+  margin-left: 470px;
+  margin-bottom: 400px;
+}
