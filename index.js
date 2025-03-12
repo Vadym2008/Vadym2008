@@ -315,8 +315,6 @@ function student() {
 
 }
 
-student()
-
 function setAvgToAllStudents(arr) {
     for (let i = 0; i < arr.length; i++) {
         let avg = 0;
@@ -354,10 +352,6 @@ function Username(userName) {
 }
 
 
-Username("Ivan")
-
-
-
 
 
 function getEmail(users, searchName){
@@ -387,7 +381,52 @@ function superHero() {
     console.log(sort);
 }
 
-superHero();
+let cart = [
+    {
+        name: "Apple",
+        price: 10,
+        quantity: 2
+    },
+    {
+        name: "Banana",
+        price: 5,
+        quantity: 5
+    }
+]
 
+function calculateTotal(cart){
+    let totalSum = 0;
+    for (let item of cart){
+        totalSum += item.price * item.quantity;
+    }
+    return totalSum;
+}
+
+calculateTotal(cart);
+
+
+function findLongestWord(){
+    let words = ["cat","elephant","giraphe"]
+    let theLongestWord = words[0];
+    for(let i = 0; i < words.length; i++){
+        if (words[i].length > theLongestWord.length) {
+            theLongestWord = words[i];
+        }
+    }
+    console.log(theLongestWord)
+}
+
+findLongestWord()
+
+
+function findLongestWordV2(words){
+    let theLongestWord = words[0];
+    for(let word of words){
+        if(word.length > theLongestWord.length){
+            theLongestWord = word
+        }
+    }
+    return theLongestWord;
+}
 //вивести матрицю чисел 10 рядків цифри від 1 до 10
 //Всі задачі обгорнути у функції і придумати хороші назви для функцій і 1 з них викликати
